@@ -4,13 +4,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-
-    <h1>SOY UN COMMIT</h1>
-
+    <div class="container">
+        <h2>Formulario de Contacto</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
 </body>
 
 </html>
